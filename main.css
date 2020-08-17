@@ -1,0 +1,42 @@
+body{
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+#titulo{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    font-family: 'Indie Flower', cursive;
+    text-decoration: underline;
+}
+#botones{
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+}
+.boton{
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    margin: 15px;
+    border-radius: 1em;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 1em;
+}
+#piedra{
+    background-color: lightgreen;
+}
+#papel{
+    background-color: lightpink;
+}
+#tijeras{
+    background-color: lightsalmon;
+}
