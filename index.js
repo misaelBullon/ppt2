@@ -27,6 +27,8 @@ function computerSelection(){
     }
 
 }
+
+//Funcion juggar una ronda del juego
 function oneround(player, computer){
 
     var jugador = player;
@@ -50,30 +52,28 @@ function oneround(player, computer){
 }
 
 
-
+//Agrego los eventos click a los botonte
 function jugar(){
 
-
+    
     piedra.addEventListener('click', function(){
         var jugador = piedra.getAttribute('value');
-        var computadora = computerSelection();
-        var roundResult = oneround(jugador, computadora);
-        console.log(roundResult);
+        var computadora = computerSelection();//La computadora elige.
+        var roundResult = oneround(jugador, computadora); //Llamo a la funcion oneroun y le paso la eleccion de la computadora y la del juador
     });
     
     papel.addEventListener('click', function(){
         var jugador = papel.getAttribute('value');
         var computadora = computerSelection();
         var roundResult = oneround(jugador, computadora);
-        console.log(roundResult);
     });
 
     tijera.addEventListener('click', function(){
         var jugador = tijera.getAttribute('value');
         var computadora = computerSelection();
         var roundResult = oneround(jugador, computadora);
-        console.log(roundResult);
     });
+
 }
 
 jugar();
