@@ -51,7 +51,7 @@ function oneround(player, computer){
     }
 }
 
-
+/*
 //Agrego los eventos click a los botonte
 function jugar(){
 
@@ -75,5 +75,15 @@ function jugar(){
     });
 
 }
+*/
+var b = document.querySelectorAll('button');
 
-jugar();
+ b.forEach((button) => {
+    button.addEventListener('click',function(){
+        var jugador = button.getAttribute('value');
+        var computadora = computerSelection();
+        var roundResult = oneround(jugador, computadora) ;
+    });
+});
+
+//jugar();
